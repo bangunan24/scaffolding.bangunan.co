@@ -1,0 +1,293 @@
+baseURL = "https://scaffolding.bangunan.co/"
+languageCode = "id"
+title = "Jual dan Sewa Scaffolding | Jual dan Sewa Scaffolding Steger Untuk Proyek Bangunan Murah"
+theme = "saeseen-hugo"
+summaryLength = 25
+paginate = 6
+
+[permalinks]
+  post = "/:slug/"
+  page = "/:slug/"
+  category = "/:slug/"
+
+[params]
+  # Site-wide settings
+  meta_description = "Tempat Jual dan Sewa Scaffolding Steger - Solusi beli dan sewa scaffolding dengan harga terjangkau, tersedia untuk kebutuhan sekala kecil dan besar."
+  viewport = "width=device-width, initial-scale=1.0"
+  fontawesome = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  logo = "/images/logo/bangunanco-logo-web.png"
+  logo_amp = "/images/logo/bangunanco-512x512.png"
+  footer_logo = "/images/logo/bangunanco-logo-putih.png"
+  favicon = "/images/logo/bangunanco-512x512.png"
+  featured_image = "/images/admin/featured-image.png"
+  author = "K. Yaman"
+  telepon = "//+6285776786091"
+  whatsapp = "//api.whatsapp.com/send?phone=6285776786091&text=*Halo bangunan.co*%20%3A"
+  enableWhatApps = true
+  enableTelepon = true
+  tocMinWordCount = 300
+  tableOfContent = "Daftar Isi:"
+  geo_latitude = -6.595038
+  geo_longitude = 106.817787
+  opening_hours = "Mo-Sa 08:00-17:00"
+
+  # Schema settings
+  base_price = 750000
+  price_range = 2000000
+  categories = ["Scaffolding", "Steger", "Peralatan Proyek"]
+  payment_methods = ["COD (Cash On Delivery)", "Transfer Bank", "Bayar DP 50%", "Transfer Setelah Terkirim", "Bayar Bertahap", "Transfer Setelah Selesai"]
+  area_served = ["Jakarta", "Bogor", "Depok", "Tangerang", "Bekasi", "Cikarang", "Karawang", "Bandung", "Serang", "Purwakarta", "Cilegon", "Cikampek", "Subang", "Rangkas Bitung"]
+  keywords = ["jual scaffolding", "sewa steger", "jual steger murah", "scaffolding proyek", "sewa scaffolding", "scaffolding untuk konstruksi", "jual scaffolding berkualitas", "scaffolding murah", "sewa scaffolding", "sewa steger", "scaffolding murah", "sewa scaffolding harian", "sewa scaffolding bulanan", "scaffolding untuk proyek konstruksi", "sewa alat bangunan"]
+  free_shipping = true
+
+  # Product
+  materials = [
+  "Mainframe Scaffolding",
+  "Ladder Frame Scaffolding",
+  "Cross Brace Scaffolding",
+  "Joint Pin Scaffolding",
+  "Catwalk Scaffolding",
+  "Stair/Tangga Scaffolding",
+  "U-Head Scaffolding",
+  "Jack Base Scaffolding",
+  "Roda Scaffolding",
+  "Wingnut Scaffolding",
+  "Tie Rod Scaffolding",
+  "Pipa Besi Scaffolding",
+  "Pipe Support Scaffolding"
+  ]
+  return_policies = [
+  "Scaffolding dapat dikembalikan jika tidak sesuai spesifikasi dalam 1 hari.",
+  "Pengembalian gratis untuk scaffolding dengan cacat produksi.",
+  "Barang yang tidak sesuai pesanan dapat dikembalikan tanpa biaya tambahan."
+  ]
+
+  # Service
+  service_types = [
+  "Scaffolding Harian",
+  "Scaffolding Bulanan",
+  "Scaffolding Untuk Proyek Konstruksi",
+  "Sewa Steger Ukuran Standar",
+  "Sewa Steger Ukuran Besar"
+  ]
+  cancellation_policies = [
+  "Scaffolding dapat dikembalikan dalam 1 hari jika tidak sesuai.",
+  "Sewa dapat ditolak jika scaffolding tidak sesuai dengan spesifikasi.",
+  "Pengembalian gratis untuk scaffolding yang tidak sesuai."
+  ]
+  service_output = "Scaffolding diantar dan diambil sesuai waktu kesepakatan"
+
+ # Hero Section
+  hero_image = "/images/admin/bg_bangunanco.png"
+  hero_title = "Jual & Sewa Scaffolding Steger Berkualitas"
+  hero_description = "Kami menyediakan layanan jual dan sewa scaffolding steger dengan harga terjangkau, baik untuk kebutuhan harian maupun bulanan. Solusi scaffolding terbaik untuk proyek konstruksi Anda, didukung oleh peralatan modern dan tenaga ahli."
+  hero_cta_text = "Pelajari Lebih Lanjut"
+  services_cta_text = "Cek Harga Sewa"
+
+  # Footer Section
+  footer_about_title = "Mengapa Memilih Kami"
+  footer_about_description = "Kami menyediakan scaffolding berkualitas dengan layanan profesional, gratis konsultasi dan survey, tanpa biaya tersembunyi, operator berpengalaman, sistem pembayaran aman, dan peralatan lengkap untuk mendukung proyek konstruksi Anda."
+
+  footer_services_title = "Kenapa Pilih Kami"
+  footer_contact_title = "Kontak Kami"
+  footer_bottom_text = "@2024 Bangunan.co. Semua Hak Dilindungi."
+
+  # Testimonials Section
+  testimonials_title = "Apa Kata Klien Kami"
+
+  [[params.footer_services]]
+  text = "scaffolding.bangunan.co menawarkan layanan jual dan sewa scaffolding steger dengan harga bersaing. Kami mengutamakan kepuasan pelanggan dengan produk yang kuat, aman, dan efisien. Pilih kami untuk mendukung kelancaran proyek konstruksi Anda dengan hasil optimal dan tepat waktu."
+
+  [[params.footer_contact]]
+    icon = "fas fa-map-marker-alt"
+    text = "Jalan Lkr. Dramaga No. 09, Bogor - JaBar"
+  [[params.footer_contact]]
+    icon = "fas fa-phone-alt"
+    text = "+62 857-7678-6091"
+  [[params.footer_contact]]
+    icon = "fas fa-envelope"
+    text = "bangunanco@gmail.com"
+
+[[params.testimonials]]
+  avatar = "/images/admin/avatar1.png"
+  name = "{Budi|Joko|Andi|Eko|Rudi|Fajar|Hendra|Samsul|Agus|Dedi}"
+  message = "{Saya menyewa scaffolding dari scaffolding.bangunan.co untuk proyek {renovasi rumah|renovasi kantor|bangunan rumah}. Prosesnya {berjalan lancar|sangat mudah|tanpa hambatan}, tepat waktu, dan kualitas scaffolding {sangat baik|memuaskan|luar biasa}.|Scaffolding dari scaffolding.bangunan.co sangat {membantu|bermanfaat} untuk proyek saya. {Pengiriman|Layanan} tepat waktu, dan kualitasnya {terbaik|kokoh|sesuai harapan}.}"
+  response = "{Terima kasih atas kepercayaan Anda! Kami {senang|gembira|bangga} dapat mendukung proyek {rumah|kantor|bangunan} Anda dengan scaffolding berkualitas.|Kami sangat menghargai ulasan Anda. Terima kasih telah mempercayakan proyek Anda kepada kami!}"
+  rating = 4
+
+[[params.testimonials]]
+  avatar = "/images/admin/avatar2.png"
+  name = "{Siti|Rina|Dewi|Wati|Lia|Nina|Ratna|Indah|Sari|Ayu}"
+  message = "{scaffolding.bangunan.co sangat {membantu|bermanfaat} dalam pembangunan {ruko|rumah|bangunan} saya. Layanan mereka {profesional|ramah|terpercaya}, dan scaffolding yang disediakan {sesuai|tepat} dengan kebutuhan proyek.|Saya puas dengan layanan scaffolding.bangunan.co yang {profesional|efisien|ramah}. Scaffolding yang saya sewa {kokoh|berkualitas tinggi|sangat sesuai} untuk proyek saya.}"
+  response = "{Kami sangat menghargai ulasan Anda. Senang mendengar bahwa Anda puas dengan scaffolding dan layanan kami.|Terima kasih, atas kepercayaannya. Kami akan terus memberikan pelayanan terbaik!}"
+  rating = 5
+
+[[params.testimonials]]
+  avatar = "/images/admin/avatar3.png"
+  name = "{Joko|Budi|Andi|Eko|Rudi|Fajar|Hendra|Samsul|Agus|Dedi}"
+  message = "{Layanan scaffolding dari scaffolding.bangunan.co sangat {memuaskan|baik|terpercaya} untuk proyek {kantor|gedung|ruko} saya. Timnya {cepat tanggap|respon cepat|profesional} dan pemasangannya {sangat rapi|tepat|teratur}.|Saya menyewa scaffolding untuk proyek {kantor|gedung} saya, dan layanannya {sangat baik|profesional|memuaskan}. Pemasangannya {tepat waktu|cepat|rapi}.}"
+  response = "{Terima kasih! Kami berkomitmen untuk memberikan layanan terbaik bagi setiap proyek, termasuk kantor Anda.|Senang dapat melayani proyek Anda. Terima kasih atas kepercayaannya!}"
+  rating = 4.5
+
+[[params.testimonials]]
+  avatar = "/images/admin/avatar4.png"
+  name = "{Andi|Budi|Joko|Eko|Rudi|Fajar|Hendra|Samsul|Agus|Dedi}"
+  message = "{Saya sangat puas dengan layanan sewa scaffolding dari scaffolding.bangunan.co. Prosesnya {efisien|mudah|lancar} dan {sangat membantu|mempercepat|mempermudah} dalam pengerjaan proyek saya.|Scaffolding dari scaffolding.bangunan.co {berkualitas|luar biasa|terbaik}, dan layanannya {cepat|efisien|ramah}. Sangat mendukung proyek saya.}"
+  response = "{Senang mendengar Anda puas dengan hasilnya. Terima kasih atas kepercayaannya dalam menggunakan layanan kami.|Terima kasih atas ulasannya. Kami sangat menghargai kepercayaan Anda pada layanan kami.}"
+  rating = 4
+
+[[params.testimonials]]
+  avatar = "/images/admin/avatar5.png"
+  name = "{Rina|Siti|Dewi|Wati|Lia|Nina|Ratna|Indah|Sari|Ayu}"
+  message = "{Pelayanan scaffolding.bangunan.co sangat {membantu|bermanfaat|memudahkan} untuk proyek {bangunan|gedung|ruko} saya. Solusi yang diberikan {tepat|efektif|memuaskan} dan scaffolding-nya {berkualitas|kokoh|terbaik}.|Scaffolding.bangunan.co memberikan {solusi tepat|produk berkualitas} untuk proyek saya. Scaffolding yang saya sewa {berkualitas tinggi|kokoh|terbaik}, dan layanannya {ramah|profesional|efisien}.}"
+  response = "{Terima kasih! Kami senang dapat membantu mewujudkan proyek Anda dengan solusi scaffolding terbaik.|Kami menghargai ulasan Anda. Terima kasih telah memilih scaffolding.bangunan.co untuk proyek Anda!}"
+  rating = 5
+
+[[params.testimonials]]
+  avatar = "/images/admin/avatar6.png"
+  name = "{Eko|Budi|Joko|Andi|Rudi|Fajar|Hendra|Samsul|Agus|Dedi}"
+  message = "{Saya menyewa scaffolding untuk {renovasi rumah|renovasi kantor|proyek bangunan}, dan hasilnya {sangat memuaskan|luar biasa|terbaik}. Layanan yang diberikan scaffolding.bangunan.co {sangat profesional|aman|terpercaya}.|Scaffolding.bangunan.co {memberikan layanan profesional|sangat membantu|berkualitas tinggi} untuk proyek saya. Scaffolding yang disediakan {berkualitas|kokoh|tepat waktu}, dan layanannya {memuaskan|profesional|terpercaya}.}"
+  response = "{Kami senang mendengar bahwa Anda puas dengan layanan kami. Terima kasih atas ulasannya!|Terima kasih, atas ulasan positifnya. Kami akan terus memberikan layanan terbaik untuk setiap proyek Anda.}"
+  rating = 5
+
+[[params.tabelItemsKomponen]]
+  name = "Mainframe"
+  price = "750.000 /unit"
+[[params.tabelItemsKomponen]]
+  name = "Ladder Frame"
+  price = "600.000 /unit"
+[[params.tabelItemsKomponen]]
+  name = "Cross Brace"
+  price = "300.000 /unit"
+[[params.tabelItemsKomponen]]
+  name = "Joint Pin"
+  price = "150.000 /unit"
+[[params.tabelItemsKomponen]]
+  name = "Catwalk"
+  price = "500.000 /unit"
+[[params.tabelItemsKomponen]]
+  name = "Stair/Tangga"
+  price = "500.000 /unit"
+[[params.tabelItemsKomponen]]
+  name = "U-Head"
+  price = "400.000 /unit"
+[[params.tabelItemsKomponen]]
+  name = "Jack Base"
+  price = "500.000 /unit"
+[[params.tabelItemsKomponen]]
+  name = "Roda Scaffolding"
+  price = "800.000 /unit"
+[[params.tabelItemsKomponen]]
+  name = "Wingnut"
+  price = "100.000 /unit"
+[[params.tabelItemsKomponen]]
+  name = "Tie Rod"
+  price = "200.000 /unit"
+[[params.tabelItemsKomponen]]
+  name = "Pipa Besi"
+  price = "300.000 /unit"
+[[params.tabelItemsKomponen]]
+  name = "Pipe Support"
+  price = "300.000 /unit"
+
+[params.appliListKomponen]
+  "Mainframe" = "struktur utama untuk scaffolding"
+  "Ladder Frame" = "rangka tangga untuk akses vertikal"
+  "Cross Brace" = "penguat antar frame scaffolding"
+  "Joint Pin" = "penyambung frame scaffolding"
+  "Catwalk" = "jalur kerja di atas scaffolding"
+  "Stair/Tangga" = "akses tangga untuk scaffolding"
+  "U-Head" = "penahan beban di bagian atas scaffolding"
+  "Jack Base" = "penopang stabilisasi dasar scaffolding"
+  "Roda Scaffolding" = "untuk memindahkan scaffolding"
+  "Wingnut" = "pengencang komponen scaffolding"
+  "Tie Rod" = "pengikat struktur scaffolding"
+  "Pipa Besi" = "tiang penopang scaffolding"
+  "Pipe Support" = "penyangga tambahan untuk stabilitas"
+
+[params.kegunaanListKomponen]
+  "Mainframe" = "komponen utama untuk pembentukan scaffolding"
+  "Ladder Frame" = "memungkinkan pekerja mengakses area kerja vertikal"
+  "Cross Brace" = "menguatkan kestabilan rangka scaffolding"
+  "Joint Pin" = "menghubungkan dan menstabilkan sambungan antar frame"
+  "Catwalk" = "memudahkan pergerakan di atas scaffolding"
+  "Stair/Tangga" = "memberikan akses mudah ke tingkat yang lebih tinggi"
+  "U-Head" = "untuk mendukung beban di bagian atas"
+  "Jack Base" = "menjaga kestabilan scaffolding dari dasar"
+  "Roda Scaffolding" = "memudahkan pergerakan scaffolding di area proyek"
+  "Wingnut" = "mengunci bagian-bagian scaffolding dengan aman"
+  "Tie Rod" = "mengikat struktur untuk menambah kekuatan"
+  "Pipa Besi" = "digunakan sebagai tiang penyangga vertikal"
+  "Pipe Support" = "untuk memperkuat tiang scaffolding"
+
+[[params.tabelItemsSewa]]
+  name = "Scaffolding Harian"
+  price = "17.000"
+[[params.tabelItemsSewa]]
+  name = "Scaffolding Bulanan"
+  price = "300.000"
+[[params.tabelItemsSewa]]
+  name = "Scaffolding Proyek Cor"
+  price = "250.000"
+[[params.tabelItemsSewa]]
+  name = "Steger Ukuran Standar"
+  price = "170.000"
+[[params.tabelItemsSewa]]
+  name = "Steger Ukuran Besar"
+  price = "200.000"
+
+[params.appliListSewa]
+  "Scaffolding Harian" = "proyek skala kecil, renovasi rumah"
+  "Scaffolding Bulanan" = "proyek konstruksi menengah, bangunan bertingkat"
+  "Scaffolding Proyek Cor" = "konstruksi besar, gedung bertingkat"
+  "Steger Ukuran Standar" = "proyek renovasi kecil hingga menengah"
+  "Steger Ukuran Besar" = "proyek besar, bangunan tinggi"
+
+[params.kegunaanListSewa]
+  "Scaffolding Harian" = "memudahkan pengerjaan konstruksi dalam waktu singkat"
+  "Scaffolding Bulanan" = "solusi untuk proyek yang membutuhkan scaffolding dalam jangka panjang"
+  "Scaffolding Proyek Cor" = "mendukung proyek konstruksi besar dan bertingkat"
+  "Steger Ukuran Standar" = "untuk pengerjaan renovasi dan proyek bangunan menengah"
+  "Steger Ukuran Besar" = "untuk proyek skala besar dan bangunan tinggi"
+
+  # Menu Section
+  [[params.menu_items]]
+    title = "Beranda"
+    url = "/"
+  [[params.menu_items]]
+    title = "Profile"
+    url = "https://bangunan.co/profile/"
+  [[params.menu_items]]
+    title = "Daftar Harga"
+    url = "https://bangunan.co/daftar-harga/"
+
+[params.header]
+   title = "Jual & Sewa Scaffolding Steger | "
+   highlight = "Bangunan.co"
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 3
+
+[related]
+  threshold = 80
+  includeNewer = true
+  toLower = false
+
+[[related.indices]]
+  name = "categories"
+  weight = 100
+
+[outputs]
+  home = ["HTML", "RSS"]
+  page = ["HTML", "AMP"]
+
+[outputFormats]
+  [outputFormats.AMP]
+    mediaType = "text/html"
+    baseName = "amp/index"
+    path = ""
+    isPlainText = false
+    permalinkable = true
+    rel = "amphtml"
