@@ -76,32 +76,43 @@
   ],
   "openingHours": "{{ .Site.Params.opening_hours }}",
   "priceRange": "Rp {{ .Site.Params.base_price }} - Rp {{ .Site.Params.price_range }}",
-  "serviceType": [
+  "makesOffer": [
     {{ range $index, $materials := .Site.Params.materials }}
-      {{ if $index }},{{ end }}"{{ $materials }}"
+      {{ if $index }},{{ end }}
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "{{ $materials }}"
+        }
+      }
     {{ end }}
   ],
-  "additionalType": "https://schema.org/PaintingService",
+  "additionalType": "https://schema.org/Service",
   "contactPoint": {
     "@type": "ContactPoint",
     "contactType": "Customer Service",
     "telephone": "{{ .Site.Params.telepon | safeURL }}",
     "areaServed": "ID"
   },
-  "paymentAccepted": [
+  "acceptedPaymentMethod": [
     {{ range $index, $method := .Site.Params.payment_methods }}
       {{ if $index }},{{ end }}"{{ $method }}"
     {{ end }}
   ],
-  "cancellationPolicy": [
-    {{ range $index, $policy := .Site.Params.return_policies }}
-      {{ if $index }},{{ end }}"{{ $policy }}"
-    {{ end }}
-  ]
+  "hasMerchantReturnPolicy": {
+    "@type": "MerchantReturnPolicy",
+    "returnPolicyCategory": "https://schema.org/Refundable",
+    "merchantReturnDays": "30",
+    "returnMethod": "https://schema.org/ReturnInStore",
+    "returnFees": "https://schema.org/FreeReturn",
+    "description": "{{ (index .Site.Params.return_policies 0) }}"
+  }
 }
 </script>
 {{- end }}
 {{ if .IsPage }}
+{{ $page := . }}
   {{ if eq .Params.type "product" }}
   {{- $rating := add 4 (div (math.Mod (mul (now.Unix) 11) 10) 10) -}}
   {{- $ratingCount := add 50 (math.Mod (mul (now.Unix) 13) 951) -}}
@@ -137,7 +148,10 @@
     "url": "{{ .Permalink }}",
     "availability": "https://schema.org/InStock",
     "itemCondition": "https://schema.org/NewCondition",
-    "paymentAccepted": ["{{ $randomPayment }}"],
+    "acceptedPaymentMethod": {
+        "@type": "PaymentMethod",
+        "name": "{{ $randomPayment }}"
+      },
     "seller": {
       "@type": "Organization",
       "name": "{{ .Site.Title }}"
@@ -171,7 +185,15 @@
         }
       }
     }
-    {{- end -}}
+    {{- end -}},
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "returnPolicyCategory": "https://schema.org/Refundable",
+      "merchantReturnDays": "1",
+      "returnMethod": "https://schema.org/ReturnInStore",
+      "returnFees": "https://schema.org/FreeReturn",
+      "description": "{{ $randomReturnPolicy }}"
+    }
   },
   "material": "{{ $randomMaterial }}",
   "category": "{{ $randomCategory }}",
@@ -198,19 +220,15 @@
         "ratingValue": "{{ $testimonial.rating }}",
         "bestRating": "5",
         "worstRating": "1"
+      },
+      "itemReviewed": {
+        "@type": "Product",
+        "name": "{{ $page.Title }}",
+        "description": "{{ $page.Summary | plainify | truncate 160 }}"
       }
     }
     {{ end }}
-  ],
-  "keywords": "{{ $allKeywords }}, {{ .Title }}",
-  "hasMerchantReturnPolicy": {
-    "@type": "MerchantReturnPolicy",
-    "returnPolicyCategory": "https://schema.org/Refundable",
-    "merchantReturnDays": "1",
-    "returnMethod": "https://schema.org/ReturnInStore",
-    "returnFees": "None",
-    "returnPolicyDescription": "{{ $randomReturnPolicy }}"
-  }
+  ]
 }
 </script>
  {{ else if eq .Params.type "service" }}
@@ -225,8 +243,7 @@
   {{- $randomCategory := index .Site.Params.categories (mod (now.Unix) (len .Site.Params.categories)) -}}
   {{- $randomPayment := index .Site.Params.payment_methods (mod (now.Unix) (len .Site.Params.payment_methods)) -}}
   {{- $randomCancellationPolicy := index .Site.Params.cancellation_policies (mod (now.Unix) (len .Site.Params.cancellation_policies)) -}}
-  {{- $serviceId := printf "SRV-%d" (add 1000 (math.Mod (now.Unix) 9000)) -}}
-  {{- $freeConsultation := .Site.Params.free_consultation -}}
+    {{- $freeConsultation := .Site.Params.free_consultation -}}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -247,7 +264,10 @@
       "offerCount": "2",
       "url": "{{ .Permalink }}",
       "availability": "https://schema.org/InStock",
-      "paymentAccepted": ["{{ $randomPayment }}"],
+      "acceptedPaymentMethod": {
+        "@type": "PaymentMethod",
+        "name": "{{ $randomPayment }}"
+      },
       "seller": {
         "@type": "Organization",
         "name": "{{ .Site.Title }}"
@@ -297,18 +317,12 @@
       }
       {{ end }}
     ],
-    "keywords": "{{ $allKeywords }}, {{ .Title }}",
-    "termsOfService": {
-      "@type": "DigitalDocument",
-      "name": "Kebijakan Pembatalan",
-      "description": "{{ $randomCancellationPolicy }}"
-    },
+    "termsOfService": "{{ .Site.BaseURL }}terms-of-service",
     "serviceOutput": {
       "@type": "Thing",
       "name": "Hasil",
       "description": "{{ .Site.Params.service_output }}"
-    },
-    "serviceId": "{{ $serviceId }}"
+    }
   }
   </script>
 {{- end }}

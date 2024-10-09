@@ -84,7 +84,10 @@
       "url": "{{ .Permalink }}",
       "availability": "https://schema.org/InStock",
       "itemCondition": "https://schema.org/NewCondition",
-      "paymentAccepted": ["{{ $randomPayment }}"],
+      "acceptedPaymentMethod": {
+        "@type": "PaymentMethod",
+        "name": "{{ $randomPayment }}"
+      },
       "seller": {
         "@type": "Organization",
         "name": "{{ .Site.Title }}"
@@ -118,7 +121,15 @@
           }
         }
       }
-      {{- end -}}
+      {{- end -}},
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "returnPolicyCategory": "https://schema.org/Refundable",
+        "merchantReturnDays": "1",
+        "returnMethod": "https://schema.org/ReturnInStore",
+       "returnFees": "https://schema.org/FreeReturn",
+        "description": "{{ index .Site.Params.return_policies (mod (now.Unix) (len .Site.Params.return_policies)) }}"
+      }
     },
     "material": "{{ $randomMaterial }}",
     "category": "{{ $randomCategory }}",
@@ -128,15 +139,6 @@
       "ratingCount": "{{ $ratingCount }}",
       "bestRating": "5",
       "worstRating": "1"
-    },
-    "keywords": "{{ $allKeywords }}, {{ .Title }}",
-    "hasMerchantReturnPolicy": {
-      "@type": "MerchantReturnPolicy",
-      "returnPolicyCategory": "https://schema.org/Refundable",
-      "merchantReturnDays": "1",
-      "returnMethod": "https://schema.org/ReturnInStore",
-      "returnFees": "None",
-      "returnPolicyDescription": "{{ index .Site.Params.return_policies (mod (now.Unix) (len .Site.Params.return_policies)) }}"
     }
   }
   </script>
@@ -151,8 +153,7 @@
   {{- $randomServiceType := index .Site.Params.service_types (mod (now.Unix) (len .Site.Params.service_types)) -}}
   {{- $randomCategory := index .Site.Params.categories (mod (now.Unix) (len .Site.Params.categories)) -}}
   {{- $randomPayment := index .Site.Params.payment_methods (mod (now.Unix) (len .Site.Params.payment_methods)) -}}
-  {{- $serviceId := printf "SRV-%d" (add 1000 (math.Mod (now.Unix) 9000)) -}}
-  {{- $freeConsultation := .Site.Params.free_consultation -}}
+    {{- $freeConsultation := .Site.Params.free_consultation -}}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -164,7 +165,6 @@
       "@type": "Organization",
       "name": "{{ .Site.Title }}"
     },
-    "serviceId": "{{ $serviceId }}",
     "offers": {
       "@type": "AggregateOffer",
       "priceCurrency": "IDR",
@@ -173,7 +173,10 @@
       "offerCount": "2",
       "url": "{{ .Permalink }}",
       "availability": "https://schema.org/InStock",
-      "paymentAccepted": ["{{ $randomPayment }}"],
+      "acceptedPaymentMethod": {
+        "@type": "PaymentMethod",
+        "name": "{{ $randomPayment }}"
+      },
       "seller": {
         "@type": "Organization",
         "name": "{{ .Site.Title }}"
@@ -204,7 +207,6 @@
       "bestRating": "5",
       "worstRating": "1"
     },
-    "keywords": "{{ $allKeywords }}, {{ .Title }}",
     "termsOfService": {
       "@type": "DigitalDocument",
       "name": "Kebijakan Pembatalan",

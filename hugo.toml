@@ -127,7 +127,7 @@ paginate = 6
   name = "{Joko|Budi|Andi|Eko|Rudi|Fajar|Hendra|Samsul|Agus|Dedi}"
   message = "{Layanan scaffolding dari scaffolding.bangunan.co sangat {memuaskan|baik|terpercaya} untuk proyek {kantor|gedung|ruko} saya. Timnya {cepat tanggap|respon cepat|profesional} dan pemasangannya {sangat rapi|tepat|teratur}.|Saya menyewa scaffolding untuk proyek {kantor|gedung} saya, dan layanannya {sangat baik|profesional|memuaskan}. Pemasangannya {tepat waktu|cepat|rapi}.}"
   response = "{Terima kasih! Kami berkomitmen untuk memberikan layanan terbaik bagi setiap proyek, termasuk kantor Anda.|Senang dapat melayani proyek Anda. Terima kasih atas kepercayaannya!}"
-  rating = 4.5
+  rating = 4
 
 [[params.testimonials]]
   avatar = "/images/admin/avatar4.png"
