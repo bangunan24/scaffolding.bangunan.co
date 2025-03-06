@@ -1,57 +1,58 @@
 testimonials:
   - avatar: /images/admin/avatar1.png
-    name: Budi
+    name: Andi
     message: >-
       Saya menyewa scaffolding dari scaffolding.bangunan.co untuk proyek
-      renovasi kantor. Prosesnya berjalan lancar, tepat waktu, dan kualitas
-      scaffolding luar biasa.
+      renovasi kantor. Prosesnya sangat mudah, tepat waktu, dan kualitas
+      scaffolding memuaskan.
     response: >-
       Kami sangat menghargai ulasan Anda. Terima kasih telah mempercayakan
       proyek Anda kepada kami!
     rating: 4
   - avatar: /images/admin/avatar2.png
-    name: Rina
+    name: Wati
     message: >-
-      scaffolding.bangunan.co sangat membantu dalam pembangunan ruko saya.
-      Layanan mereka ramah, dan scaffolding yang disediakan sesuai dengan
+      scaffolding.bangunan.co sangat membantu dalam pembangunan rumah saya.
+      Layanan mereka terpercaya, dan scaffolding yang disediakan tepat dengan
       kebutuhan proyek.
     response: >-
       Terima kasih, atas kepercayaannya. Kami akan terus memberikan pelayanan
       terbaik!
     rating: 5
   - avatar: /images/admin/avatar3.png
-    name: Agus
+    name: Rudi
     message: >-
-      Saya menyewa scaffolding untuk proyek kantor saya, dan layanannya
-      memuaskan. Pemasangannya cepat.
+      Saya menyewa scaffolding untuk proyek kantor saya, dan layanannya sangat
+      baik. Pemasangannya cepat.
     response: >-
       Terima kasih! Kami berkomitmen untuk memberikan layanan terbaik bagi
       setiap proyek, termasuk kantor Anda.
     rating: 4
   - avatar: /images/admin/avatar4.png
-    name: Hendra
+    name: Eko
     message: >-
-      Scaffolding dari scaffolding.bangunan.co berkualitas, dan layanannya
-      efisien. Sangat mendukung proyek saya.
+      Saya sangat puas dengan layanan sewa scaffolding dari
+      scaffolding.bangunan.co. Prosesnya lancar dan mempermudah dalam pengerjaan
+      proyek saya.
     response: >-
       Terima kasih atas ulasannya. Kami sangat menghargai kepercayaan Anda pada
       layanan kami.
     rating: 4
   - avatar: /images/admin/avatar5.png
-    name: Ayu
+    name: Ratna
     message: >-
-      Pelayanan scaffolding.bangunan.co sangat membantu untuk proyek ruko saya.
-      Solusi yang diberikan efektif dan scaffolding-nya terbaik.
+      Pelayanan scaffolding.bangunan.co sangat bermanfaat untuk proyek bangunan
+      saya. Solusi yang diberikan memuaskan dan scaffolding-nya berkualitas.
     response: >-
       Terima kasih! Kami senang dapat membantu mewujudkan proyek Anda dengan
       solusi scaffolding terbaik.
     rating: 5
   - avatar: /images/admin/avatar6.png
-    name: Fajar
+    name: Budi
     message: >-
-      Saya menyewa scaffolding untuk renovasi kantor, dan hasilnya luar biasa.
-      Layanan yang diberikan scaffolding.bangunan.co terpercaya.
+      Scaffolding.bangunan.co berkualitas tinggi untuk proyek saya. Scaffolding
+      yang disediakan kokoh, dan layanannya memuaskan.
     response: >-
-      Kami senang mendengar bahwa Anda puas dengan layanan kami. Terima kasih
-      atas ulasannya!
+      Terima kasih, atas ulasan positifnya. Kami akan terus memberikan layanan
+      terbaik untuk setiap proyek Anda.
     rating: 5
