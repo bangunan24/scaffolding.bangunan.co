@@ -1,10 +1,13 @@
 ---
-title: "Jual Steger Scaffolding di Kencana Bogor"
-date: "2024-05-21"
-categories: 
-  - "harga"
-type: "product"
-description: "Jual Steger Scaffolding di Kencana Bogor. Anda dapat membeli Steger di toko kami, kalau di sekitar daerah anda belum ada yg menjualnya. Anda dapat membelinya..."
+title: Jual Steger Scaffolding di Kencana Bogor
+date: '2025-05-01'
+categories:
+  - harga
+type: product
+description: >-
+  Jual Steger Scaffolding di Kencana Bogor. Anda dapat membeli Steger di toko
+  kami, kalau di sekitar daerah anda belum ada yg menjualnya. Anda dapat
+  membelinya...
 ---
 
 **Jual Steger Scaffolding di Kencana Bogor** – Perancah merupakan sebuah struktur sementara yg diaplikasikan untuk menyangga manusia dan material dalam pembetulan gedung ataupun baangunan-bangunan bertingkat. Bentuk dari Perancah ini seperti modular dan pipa atau tabung logam, namun ada juga material lain yang dipakai.
