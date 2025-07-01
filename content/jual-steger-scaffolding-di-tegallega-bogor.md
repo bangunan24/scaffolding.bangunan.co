@@ -1,10 +1,13 @@
 ---
-title: "Jual Steger Scaffolding di Tegallega Bogor"
-date: "2024-07-11"
-categories: 
-  - "harga"
-type: "product"
-description: "Jual Steger Scaffolding di Tegallega Bogor. Anda bisa membeli Perancah di toko kami, jika di sekitar daerah anda belum ada yang menjualnya. Anda bisa membeli..."
+title: Jual Steger Scaffolding di Tegallega Bogor
+date: '2025-07-01'
+categories:
+  - harga
+type: product
+description: >-
+  Jual Steger Scaffolding di Tegallega Bogor. Anda bisa membeli Perancah di toko
+  kami, jika di sekitar daerah anda belum ada yang menjualnya. Anda bisa
+  membeli...
 ---
 
 **Jual Steger Scaffolding di Tegallega Bogor** – Steger ialah sebuah struktur sementara yg diterapkan untuk menyangga manusia dan material dalam perbaikan gedung maupun baangunan-bangunan bertingkat. Wujud dari Perancah ini semisal modular dan pipa atau tabung logam, tapi ada juga material lain yang diterapkan.
