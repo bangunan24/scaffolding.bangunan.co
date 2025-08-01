@@ -1,10 +1,13 @@
 ---
-title: "Jual Steger Scaffolding di Lemahabang Karawang"
-date: "2024-08-20"
-categories: 
-  - "harga"
-type: "product"
-description: "Jual Steger Scaffolding di Lemahabang Karawang. Anda dapat membeli Scaffolding di toko kami, sekiranya di sekitar daerah anda belum ada yg memasarkannya. And..."
+title: Jual Steger Scaffolding di Lemahabang Karawang
+date: '2025-08-01'
+categories:
+  - harga
+type: product
+description: >-
+  Jual Steger Scaffolding di Lemahabang Karawang. Anda dapat membeli Scaffolding
+  di toko kami, sekiranya di sekitar daerah anda belum ada yg memasarkannya.
+  And...
 ---
 
 **Jual Steger Scaffolding di Lemahabang Karawang** – Scaffolding yaitu sebuah struktur sementara yang dipakai untuk menopang manusia dan material dalam perbaikan gedung ataupun baangunan-bangunan besar. Wujud dari Scaffolding ini seperti modular dan pipa atau tabung logam, melainkan ada juga bahan lain yang digunakan.
