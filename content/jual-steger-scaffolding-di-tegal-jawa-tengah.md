@@ -1,6 +1,6 @@
 ---
 title: Jual Steger Scaffolding di Tegal Jawa Tengah
-date: '2025-05-01'
+date: '2026-05-01'
 categories:
   - harga
 type: product

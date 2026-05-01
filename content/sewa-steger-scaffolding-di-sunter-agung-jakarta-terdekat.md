@@ -1,6 +1,6 @@
 ---
 title: 'Sewa Steger Scaffolding di Sunter Agung Jakarta [Terdekat]'
-date: '2025-05-01'
+date: '2026-05-01'
 categories:
   - harga
 type: service
